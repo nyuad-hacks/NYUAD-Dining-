@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NYUAD Dining</title>
+        <style type="text/css">
+            h1{
+                color: #57068c;
+            }
+            
+            table, td, th {
+                border: 1px solid black;
+                width: 700px;
+            }
+        </style>
+        <link rel="stylesheet" type="text/css" href="CSS/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container" id="container">
+            <a href="blog.html">Go To Home</a>
+            <hr>
+            <!-- Headings -->
+            <h1 style="text-align:center">Meal Swipe Sharing <img src="loginImg.jpg" width="30" height="40"></h1>
+
+            <!-- Paragraph -->
+            <div id="availability">
+                <h3 style="text-align:center">Meal Swipe Availability</h3>
+            
+            <!-- Table -->
+                <table align="center" id="postsTable">
+                    <thead> <!-- Column Heading -->
+                        <tr> <!-- Row -->
+                            <th>Name</th> <!-- Table Title -->
+                            <th>Contact</th>
+                            <th>Available Mealswipes</th>
+                            <th>Time Range</th>
+                        </tr>
+                    </thead>          
+                    <tbody>
+                        <tr>
+                            <td>Team D</td>
+                            <td>team@dhack.com</td>
+                            <td style="text-align:center">5</td>
+                            <td>6pm-8pm</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <br> <!-- break line -->
+            <hr> <!-- draw separating line -->
+            <br>
+
+            <h4 style="text-align:center">Do you have extra to share?</h4>
+            <div class="button">
+                <button onclick="window.location.href = 'page5.html#register';">Share</button>
+            </div>
+            
+            
+            
+            <br><br><br><br><br><br><br><br><br>
+            
+            <div class="register" id="register">
+                <h3>Register To Share Meal Swipe</h3>
+                  
+                <form class="myForm">
+                    <div class="formGroup">
+                        <label>Name: </label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <label> </label>
+                    <div class="formGroup">
+                        <label>Contact: </label>
+                        <input type="text" name="contact" id="contact">
+                    </div>
+                    <div class="formGroup">
+                        <label>Mealswipes available: </label>
+                        <input type="number" name="mealswipes" min="1" max="14" id="mealswipes">
+                        
+                    </div>
+                    <label> </label>
+                    <div class="formGroup">
+                        <label>Available times: </label>
+<!--                        <textarea name="message"></textarea>-->
+                        <input type="number" name ="starttime" min = "0" max = "12" id="starttime">
+                        <select name="range" id="startaorp">
+                            <option value="am">AM</option>
+                            <option value="pm">PM</option>
+                        </select>
+                        <label> - </label>
+                        <input type="number" name ="endtime" min="0" max="12" id="endtime">
+                        <select name="range" id="endaorp">
+                            <option value="am">AM</option>
+                            <option value="pm">PM</option>
+                        </select>
+                    </div>
+                    <label> </label>
+<!--                    <input class="button" type="submit" value="Submit" name="">-->
+                </form>
+                <div class="button">
+                    <button id = "submit" onclick="window.location.href = 'page5.html#container';">Submit</button>
+                </div>
+            </div>
+            
+            <br><br><br><br><br><br><br><br><br>
+            
+        </div>
+        <script type="text/javascript" src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+        <script src='script.js'></script>
+        
+    </body>
+    
+</html>
