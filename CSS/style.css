@@ -1,0 +1,119 @@
+/* * means everything
+*{
+    margin: 0;
+    padding: 0;
+}
+*/
+body{
+    background-color: #f4f4f4;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+/*    font-family: Arial, Helvetica, sans-serif; */
+    font-size: 18px;
+    font-weight: normal;
+    /* same as above 3*/
+    font: normal Arial, Helvetica, sans-serif;
+    
+    line-height: 1.6em;
+    margin: 0;
+}
+
+.container{
+    width: 60%; /*percentage changes display based on window size*/
+    margin: auto;
+}
+
+.button{
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.button button{
+    background-color: #57068c;
+    color:#fff;
+    padding: 10px 15px;
+    border: none;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 8px;
+}
+
+.button button:hover{
+    background: gray;
+    color: black;
+}
+
+.clr{
+    clear:both;
+}
+
+.display{
+    margin: auto;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    text-align: right;
+    color: #000;
+}
+
+a:hover{
+    color: rgb(255, 0, 0);
+}
+
+a:active{
+    color:green;
+}
+
+/*
+a:visited{
+    color: dimgray;
+}
+*/
+
+.availability{
+    border:1px #ccc solid;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.availability h3{
+    text-align: center;
+}
+
+.availability ul{
+    padding: 0;
+    padding-left: 20px; 
+    list-style: square;
+}
+
+.availability li{
+    padding-bottom: 6px;
+    border-bottom: dotted 1 px #333;
+    list-style-image: url('../list-style-image.JPG')
+}
+
+.register{
+    border:1px #ccc solid;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.register h3{
+    text-align: center;
+}
+
+.register ul{
+    padding: 0;
+    padding-left: 20px; 
+    list-style: square;
+}
+
+.register li{
+    padding-bottom: 6px;
+    border-bottom: dotted 1 px #333;
+    list-style-image: url('../list-style-image.JPG')
+}
