@@ -12,23 +12,27 @@
     			color: white;
     			padding-left: 10px; 
 			}
-		.dropbtn {
-		  background-color: #3498DB;
+		.dropbtn1 {
+/*		  background-color: #3498DB;
 		  color: white;
 		  margin-right: 10px; 
 		  margin-bottom: 10px;
 		  padding: 16px;
 		  font-size: 16px;
-		  border: none;
+		  border: none;*/
+		  position: absolute;
+		  right: 15px;
+		  top: 10px;
+		  /*background: url(https://cdn.onlinewebfonts.com/svg/img_45818.png);*/
 		}
-
+/*
 		.dropbtn:hover, .dropbtn:focus {
 		  background-color: #2980B9;
-		}
+		}*/
 
 		.dropdown {
 		  /*position: relative;*/
-		  display: inline-block;
+		 /* display: block;*/
 		  text-align: left;
 		  left: auto;
 		  cursor: pointer;
@@ -40,6 +44,8 @@
 		.dropdown-content {
 		  display: none;
 		  text-align: left;
+		  right: 0px;
+		  top: 35px;
 		  position: absolute;
 		  background-color: #f1f1f1;
 		  min-width: 160px;
@@ -47,6 +53,7 @@
 		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 		  z-index: 1;
 		}
+
 
 		.dropdown-content a {
 		  color: black;
@@ -70,28 +77,34 @@
 		<h2>NYUAD Dining
 			<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 		</h2>
+<!-- 		<img class="dropbtn" src="menu2.jpg" onmouseover="this.src='menuhover.png'" onmouseout="this.src='menu2.jpg'" width="20" height="20"> -->
 <div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+	<img class="dropbtn1" onclick="myFunction()" src="menu2.jpg" onmouseover="this.src='menuhover.png'" onmouseout="this.src='menu2.jpg'" width="20" height="20">
+  <!-- <button onclick="myFunction()" class="dropbtn1">
+  	
+  </button> -->
   <div id="myDropdown" class="dropdown-content">
-    <a href="#home">Menu</a>
-    <a href="#about">Mealswipe Share</a>
+    <a href="#Menu">Menu</a>
+    <a href="#Mealswipe Share">Mealswipe Share</a>
     <a href="#contact">Contact</a>
   </div>
 </div>
 	</div>
 
-<img src="back2.jpg" alt="oops" width="920" height="630">
+<img src="back2.jpg" alt="oops" width="1460" height="630">
 
 <script>
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function myFunction() {
+
   document.getElementById("myDropdown").classList.toggle("show");
+  console.log("asdfdas;lkf");
 }
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
+  if (!event.target.matches('.dropbtn1')) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
