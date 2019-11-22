@@ -63,7 +63,7 @@
             <div class="register" id="register">
                 <h3>Register To Share Meal Swipe</h3>
                   
-                <form class="myForm">
+                <form class="myForm" id="myForm">
                     <div class="formGroup">
                         <label>Name: </label>
                         <input type="text" name="name" id="name">
@@ -107,6 +107,11 @@
         </div>
         <script type="text/javascript" src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
         <script src='script.js'></script>
+        <script>
+        function resetForm() {
+            document.getElementById("myForm").reset();
+        }
+        </script>
         
     </body>
     
