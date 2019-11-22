@@ -1,0 +1,179 @@
+/* * means everything
+*{
+    margin: 0;
+    padding: 0;
+}
+*/
+body{
+    background-color: #f4f4f4;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+/*    font-family: Arial, Helvetica, sans-serif; */
+    font-size: 18px;
+    font-weight: normal;
+    /* same as above 3*/
+    font: normal Arial, Helvetica, sans-serif;
+    
+    line-height: 1.6em;
+    margin: 0;
+}
+
+.container{
+    width: 60%; /*percentage changes display based on window size*/
+    margin: auto;
+}
+
+.button{
+    text-align: center;
+    
+}
+
+.button button{
+    background-color: #57068c;
+    color:#fff;
+    padding: 10px 15px;
+    border: none;
+    font-size: 18px;
+}
+
+.button button:hover{
+    background: gray;
+    color: black;
+}
+
+.clr{
+    clear:both;
+}
+
+.display{
+    margin: auto;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    text-align: right;
+    color: #000;
+}
+
+a:hover{
+    color: rgb(255, 0, 0);
+}
+
+a:active{
+    color:green;
+}
+
+a:visited{
+    color: dimgray;
+}
+
+.availability{
+    border:1px #ccc solid;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.availability h2{
+    text-align: center;
+}
+
+.availability ul{
+    padding: 0;
+    padding-left: 20px; 
+    list-style: square;
+    /* list-style: none; */
+}
+
+.availability li{
+    padding-bottom: 6px;
+    border-bottom: dotted 1 px #333;
+    list-style-image: url('../list-style-image.JPG')
+}
+
+.myForm{
+    padding: 20px;
+}
+
+.myForm .formGroup{
+    padding-bottom: 15px;
+}
+
+.myForm label{
+    display: block; /* puts label on a separate line */
+}
+
+.myForm input[type="text"], .myForm textarea{
+    padding: 8px;
+    width:100%;
+}
+
+.block{
+    float:left; /* puts blocks horizontally */
+    width: 33.3%;
+    border: 1px solid #ccc;
+    padding:10px;
+    box-sizing: border-box; /* corrects what happens because of the above 2 lines */
+}
+
+/* . for class, # for id */
+#mainBlock{
+    float:left;
+    width: 70%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#sidebar{
+    float: right;
+    width: 30%;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.pBox{
+    width: 800px;
+    height: 500px;
+    border:1px solid #000;
+    margin-top:30px;
+    position:relative; /* lets elements in it be relocated within it. Without it, the positions defined below will use entire html document */
+    background-image: url('../background.jpg');
+    background-repeat: no-repeat;
+    background-position: 100px 200px;
+    background-position: center center;  
+}
+
+.pBox h1{
+    position: absolute; /* positions the element inside pBox */
+    top:40px;
+    left:200px;
+}
+
+.pBox h2{
+    position: absolute;
+    bottom: 40px;
+    right:100px;
+}
+
+.fixMe{
+    position:fixed;
+    top:400px;
+}
+
+.myList li:first-child{
+    background: red;
+}
+
+.myList li:last-child{
+    background: blue;
+}
+
+.myList li:nth-child(4){
+    background: yellow;
+}
+
+.myList li:nth-child(odd){
+    background: grey;
+}
