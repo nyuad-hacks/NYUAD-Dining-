@@ -17,7 +17,7 @@
     </head>
     <body>
         <div class="container" id="container">
-            <a href="blog.html">Go To Home</a>
+            <a href="NYUAD4.html">Go To Home</a>
             <hr>
             <!-- Headings -->
             <h1 style="text-align:center">Meal Swipe Sharing <img src="loginImg.jpg" width="30" height="40"></h1>
@@ -66,29 +66,29 @@
                 <form class="myForm" id="myForm">
                     <div class="formGroup">
                         <label>Name: </label>
-                        <input type="text" name="name" id="name">
+                        <input type="text" name="name" id="name" required>
                     </div>
                     <label> </label>
                     <div class="formGroup">
                         <label>Contact: </label>
-                        <input type="text" name="contact" id="contact">
+                        <input type="text" name="contact" id="contact" required>
                     </div>
                     <div class="formGroup">
                         <label>Mealswipes available: </label>
-                        <input type="number" name="mealswipes" min="1" max="14" id="mealswipes">
+                        <input type="number" name="mealswipes" min="1" max="14" id="mealswipes" required>
                         
                     </div>
                     <label> </label>
                     <div class="formGroup">
                         <label>Available times: </label>
 <!--                        <textarea name="message"></textarea>-->
-                        <input type="number" name ="starttime" min = "0" max = "12" id="starttime">
+                        <input type="number" name ="starttime" min = "0" max = "12" id="starttime" required>
                         <select name="range" id="startaorp">
                             <option value="am">AM</option>
                             <option value="pm">PM</option>
                         </select>
                         <label> - </label>
-                        <input type="number" name ="endtime" min="0" max="12" id="endtime">
+                        <input type="number" name ="endtime" min="0" max="12" id="endtime" required>
                         <select name="range" id="endaorp">
                             <option value="am">AM</option>
                             <option value="pm">PM</option>
