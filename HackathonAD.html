@@ -33,7 +33,9 @@
     font-size: 120%;
     text-align: center;
   }
-  button {
+  a {
+    background-color: lightgray;
+    text-decoration: none;
     color : #57068c;
     font-family :'Montserrat', sans-serif;
     font-size : 150%;
@@ -64,28 +66,30 @@
   </style>
 </head>
   <body>
-        <div id="title">
-        <h2> NYUAD Dining Central </h2>
-        </div>
-        <div id ="content">
-        <h3> Sign in </h3>
-        <div class="centred">
-          <p>
-            <label>&nbsp; &nbsp; &nbsp; &nbsp;NetID :</label>
-            <input type = "text"
-                    id = "myText"
-                    value = "" />
-          </p>
-          <p>
-            <label> Password :</label>
-            <input type ="password"
-                    id = "myPwd"
-                    value = "" />
-          </p>
-        </div>
-          <div id = "button-div">
-          <button> Sign in</button>
-          </div>
-        </div>
+        <form>
+            <div id="title">
+                <h2> NYUAD Dining Central </h2>
+            </div>
+            <div id ="content">
+                <h3> Sign in </h3>
+            <div class="centred">
+              <p>
+                <label>&nbsp; &nbsp; &nbsp; &nbsp;NetID :</label>
+                <input type = "text"
+                        id = "myText"
+                        value = "" required/>
+              </p>
+              <p>
+                <label> Password :</label>
+                <input type ="password"
+                        id = "myPwd"
+                        value = "" required/>
+              </p>
+            </div>
+              <div id = "button-div">
+                  <a href="NYUAD4.html"> Sign in</a>
+              </div>
+            </div>
+        </form>
   </body>
 </html>
