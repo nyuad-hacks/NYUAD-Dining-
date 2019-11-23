@@ -5,12 +5,24 @@
 	<head>	
 		<title> NYUAD Dining</title>
 		<style>
+			body,html{
+				height: 100%;
+				width: 100%;
+				margin:0;
+				padding: 0;
+				display: block;
+			}
 			h2 {
 				font-family: 'Montserrat', sans-serif;
 				display:inline-block;
-    			float:left;
+    			/*float:left;*/
     			color: white;
-    			padding-left: 10px; 
+    			/*padding-left: 10px;*/
+    			text-align: center; 
+
+    			padding-top: 30px;
+    			margin-top: 0;
+    			font-size: 40px;
 			}
 		.dropbtn1 {
 /*		  background-color: #3498DB;
@@ -67,14 +79,27 @@
 		.show {display: block;}
 		.heading{
 			background-color: #57068c;
-			height: 65px;
+			/*height: 65px;*/
+
+    position: relative;
+	/*background-color: #57068C;*/
+	height:100px;
+	width:100%;
+	z-index:1;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-top:-20px;
+    background-position: 8px 8px; 
+    /*margin-left: -10px;*/
+    /*margin-right: 10px;*/
 		}
 
 		</style>
 </head>
 <body>
 	<div class= "heading">
-		<h2>NYUAD Dining
+		<h2>NYUAD Dining Central
 			<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 		</h2>
 <!-- 		<img class="dropbtn" src="menu2.jpg" onmouseover="this.src='menuhover.png'" onmouseout="this.src='menu2.jpg'" width="20" height="20"> -->
@@ -91,7 +116,7 @@
 </div>
 	</div>
 
-<img src="back2.jpg" alt="oops" width="1460" height="630">
+<img src="back2.jpg" alt="oops" width= 100% height= 88.4% >
 
 <script>
 /* When the user clicks on the button, 
